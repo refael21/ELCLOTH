@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELCLOTH</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: #070606 !important;
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+            color: #030000 !important;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #e6530f !important;
+        }
+
+        .hero-section {
+            background-color: #f3eded;
+            padding: 100px 0;
+            margin-top: 76px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn-shop-now {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            background-color: #007bff;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .btn-shop-now:hover {
+            transform: translateY(-2px);
+        }
+
+        .product-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .features-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .feature-icon {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .categories-section {
+            padding: 80px 0;
+        }
+
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-heading {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: #007bff;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">ELCLOTH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Koleksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="hero-title">Temukan Jati Dirimu Dengan Gaya Yang Memukau</h1>
+                    <p class="hero-subtitle">Koleksi Dan Desain Yang Kami Buat Sangat Cocok Untuk Semua Kalangan. YUK BELANJA TUNGGU APALAGI!!!</p>
+                    <a href="#products" class="btn btn-primary btn-shop-now">Belanja Sekarang</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="Foto Model.jpg" alt="Fashion Hero" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="product-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Terbaru</h2>
+            <div class="row">
+                <!-- Product Card 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Rock N Roll.png" class="card-img-top" alt="Rock N Roll Cloth">
+                        <div class="card-body">
+                            <h5 class="card-title">Rock N Roll Cloth</h5>
+                            <p class="price">Rp 100.000</p>
+                            <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Bandana Reggae.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Bandana Reggae</h5>
+                            <p class="price">Rp 20.000</p>
+                            <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Jaket.png" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaket Pael Cloth</h5>
+                            <p class="price">Rp 250.000</p>
+                            <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Sneakers.png" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sneakers</h5>
+                            <p class="price">Rp 400.000</p>
+                            <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Fashion</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="Model Wanita.png" alt="Wanita" class="img-fluid">
+                        <div class="category-overlay">
+                            <h3>Fashion Wanita</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="Model Pria.png" alt="Pria" class="img-fluid">
+                        <div class="category-overlay">
+                            <h3>Fashion Pria</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="Aksesoris.png" alt="Aksesoris" class="img-fluid">
+                        <div class="category-overlay">
+                            <h3>Aksesoris</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-shipping-fast fa-3x feature-icon"></i>
+                    <h4 class="feature-title">Pengiriman Cepat</h4>
+                    <p>Gratis pengiriman untuk pembelian di atas Rp 500.000</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-medal fa-3x feature-icon"></i>
+                    <h4 class="feature-title">Kualitas Terjamin</h4>
+                    <p>Produk terbaik dengan material premium</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-headset fa-3x feature-icon"></i>
+                    <h4 class="feature-title">Layanan 24/7</h4>
+                    <p>Dukungan pelanggan setiap saat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">ELCLOTH</h5>
+                    <p>Temukan gaya fashion terbaikmu bersama ELCLOTH.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="#" class="footer-link">Cara Pembelian</a></li>
+                        <li><a href="#" class="footer-link">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="footer-link">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Kontak</h5>
+                    <p>
+                        Jl. Raya Bekasi<br>
+                        Bekasi, Indonesia<br>
+                        Email: info@elcloth.com<br>
+                        Telp: (051) 1234-5678
+                    </p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">© 2024 ELCLOTH. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
